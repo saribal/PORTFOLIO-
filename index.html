@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Portfolio | Final Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Floating Navbar-->
+  <header>
+    <nav class="navbar">
+      <div class="logo">&lt;Portfolio /&gt;</div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle">☀️ Light Mode</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME SECTION -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <span class="badge">BSIT Student</span>
+        <h1>Hi, I'm <span class="neon-text">ALVIN B. LOQUIÑO</span></h1>
+        <p style="color: var(--text-muted); font-size: 1.1rem; margin-top: 10px;">
+          An aspiring IT professional passionate about modern web design, software development, and interactive digital solutions.
+        </p>
+        <p id="liveClock" style="margin-top: 15px; font-weight: bold; color: var(--neon-cyan);"></p>
+        <a href="#projects" class="btn-glow">Explore Work</a>
+      </div>
+
+      <div class="profile-frame">
+        <img src="images/profile.png" alt="Profile" class="profile-img">
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <h2 style="font-size: 2rem;">About <span class="neon-text">Me</span></h2>
+      <div class="glass-card">
+        <h3>Personal Background</h3>
+        <p style="margin-top: 10px; color: var(--text-muted); line-height: 1.6;">
+          Hello, I am a student currently taking Bachelor of Science in Information Technology. I am interested in building efficient software solutions, clean visual components, and learning full-stack web architectures.
+          <br> <br>
+          I am a dedicated Information Technology student with a strong passion for web development, programming, and user interface design. I enjoy turning complex challenges into clean, functional, and visually engaging digital experiences. I am always eager to learn new technologies, build practical applications, and continuously expand my skills in software development.
+        </p>
+        
+
+        <div class="read-more-content">
+          <p style="color: var(--text-muted); line-height: 1.6;">
+            My academic training includes structured cabling setup, and logic formulation in C++ and JavaScript.
+          </p>
+        </div>
+        <button class="btn-glow" style="padding: 8px 20px; font-size: 0.85rem;" onclick="toggleReadMore(this)">Read More</button>
+      </div>
+
+      <div class="glass-card">
+        <h3>Education</h3>
+        <p style="margin-top: 10px;"><strong>Bachelor of Science in Information Technology</strong></p>
+        <p style="color: var(--text-muted); margin-top: 5px;">Specializing in web and core application development.
+          <br>
+          School: Bestlink College of the Philippines
+          <br>
+          Year Level: Second-Year College
+          <br>
+          Program: Bachelor of Science in Information Technology (BSIT)
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+      <h2 style="font-size: 2rem;">Technical & Personal <span class="neon-text">Skills</span></h2>
+      
+      <div class="glass-card">
+        <h3>Technical Skills</h3>
+        <ul class="skills-simple-list">
+          <li>
+            <strong>HTML5 & CSS3:</strong> Basic knowledge of structuring semantic web pages and styling layouts with Flexbox and modern CSS gradients.
+          </li>
+          <li>
+            <strong>JavaScript:</strong> Fundamental understanding of DOM manipulation, handling click events, and adding interactive elements like dark mode toggles.
+          </li>
+          <li>
+            <strong>C++ Programming:</strong> Working knowledge of core programming concepts, control structures, custom functions, and interactive menu-driven console applications.
+          </li>
+          <li>
+            <strong>Computer Hardware & Cabling:</strong> Basic understanding of structured network cabling layouts and standard IT infrastructure principles.
+          </li>
+        </ul>
+      </div>
+
+      <div class="glass-card">
+        <h3>Personal Skills</h3>
+        <div class="skills-badges">
+          <span class="badge">Problem Solving</span>
+          <span class="badge">Adaptability</span>
+          <span class="badge">Time Management</span>
+          <span class="badge">Team Collaboration</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <h2 style="font-size: 2rem;">Course <span class="neon-text">Projects</span></h2>
+      
+      <!-- Interactive Filter Tabs -->
+      <div class="filter-tabs">
+        <button class="tab-btn active" data-filter="all">All</button>
+        <button class="tab-btn" data-filter="prelim">1</button>
+        <button class="tab-btn" data-filter="midterm">2</button>
+        <button class="tab-btn" data-filter="final">3</button>
+      </div>
+
+      <div class="projects-grid">
+        <div class="glass-card project-card" data-category="prelim" style="margin-top:0;">
+          <img src="images/project1.png" alt="Project 1">
+          
+          <h3>MY MULTIMEDIA PAGE</h3>
+          <p style="color: var(--text-muted); margin-top: 8px; font-size: 0.9rem;">
+            A digital space that combines text, images, audio, video, and animations to share information.
+          </p>
+          <a href="https://alvinniiee.github.io/My-Multimedia-Page-ITE1---Activity-/" class="btn-glow" style="padding: 8px 16px; font-size: 0.8rem;">View Activity</a>
+        </div>
+
+        <div class="glass-card project-card" data-category="midterm" style="margin-top:0;">
+          <img src="images/project2.png" alt="Midterm Project">
+          <h3>STORY BOOK</h3>
+          <p style="color: var(--text-muted); margin-top: 8px; font-size: 0.9rem;">
+            Discover magical adventures, wonderful characters, and inspiring stories waiting to be explored.
+          </p>
+          <a href="https://alvinniiee.github.io/STORY-BOOK/?fbclid=IwY2xjawVFHY5leHRuA2FlbQIxMQBwZG9mA2JyaWQRMVlDRjhoUndpTnh0czl0N1lzcnRjBmFwcF9pZAEwAAEepL1xLgF5YpzrXN1v2oVApbnYrMbsj7MpR_3nXqsrwLqwYp97g-W8AuqjKzI_aem_oMQWXq2oYVwaZZ2p9wqYrA#stories" class="btn-glow" style="padding: 8px 16px; font-size: 0.8rem;">View Activity</a>
+        </div>
+
+        <div class="glass-card project-card" data-category="final" style="margin-top:0;">
+          <img src="images/project3.png" alt="Final Project">
+          <h3>TEACHER'S MONTH</h3>
+          <p style="color: var(--text-muted); margin-top: 8px; font-size: 0.9rem;">
+          National Teachers' Month in the Philippines is a month-long celebration from September 5 to October 5.
+          </p>
+          <a href="https://alvinniiee.github.io/Teacher-s-Month/#message" class="btn-glow" style="padding: 8px 16px; font-size: 0.8rem;">View Activity</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION[cite: 1] -->
+    <section id="contact">
+      <h2 style="font-size: 2rem;">Contact <span class="neon-text">Information</span></h2>
+      <div class="glass-card">
+        <h3>Reach Out Directly</h3>
+        <p style="margin-top: 15px;">📞 <strong>Phone:</strong> +63 963 259 4854</p>
+        <p style="margin-top: 10px;">✉️ <strong>Email:</strong> alvinloquino55@gmail.com</p>
+      </div>
+    </section>
+  </main>
+
+  <button id="backToTop">↑</button>
+
+  <footer>
+    <p>&copy; 2026 ALVIN B. LOQUIÑO. ITE 1 Final Project.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
